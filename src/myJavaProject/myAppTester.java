@@ -9,13 +9,16 @@ public class myAppTester {
  public static void main(String[] args) {
 	  
 	  Scanner input = new Scanner(System.in);
-	  int n=0;
+	  int n=0,x=0;
 	  System.out.println("Hello Software Engineering World");
-	  System.out.println("Input your number and press enter: ");
+	  System.out.println("Input your 2 numbers and press enter: ");
 	  n = input.nextInt();
+	  x = input.nextInt();
+	  
 	  System.out.print("Reverse of the input number is:");
 	  reverseMethod(n);
 	  System.out.println();
+	  myTestMethod(x);
 
 	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
 
@@ -34,14 +37,19 @@ public class myAppTester {
 	   }
 
 
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
+	   
+	       public static void myTestMethod(int y){
 
-            
+	    	   System.out.println("Hello Software Engineering World again");
+	    	  
+	    		  int a=y,c=0;
+	    		  System.out.println("Input your number and press enter: ");
+	    		 
+	    		  c=a*a;
+	    		  System.out.println("Input your "+c);
 
 		   }
 	 
-	   */
+	   
 
 }
